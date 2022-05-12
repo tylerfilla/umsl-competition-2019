@@ -20,5 +20,17 @@
 #include <vector>
 
 int main(int argc, char* argv[]) {
-  std::cout << "Hello, program 1!\n";
+  int req = std::atoi(argv[1]);
+
+  int num = 1;
+
+  for (int i = 0; i < req; ++i) {
+
+    for (int j = 0; j < req - i; ++j) {
+      std::cout << num;
+    }
+    std::cout << "\n";
+
+    num++;
+  }
 }
